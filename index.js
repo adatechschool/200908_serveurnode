@@ -18,6 +18,8 @@ function requestListener(request, response) {
 	response.writeHead(200);
 	response.end('Coucou');
 
+	console.log("Ceci est une requete",  request.method);
+
 	if (request.method === 'GET') {
 		console.log('requête reçue');
 	} else if (request.method === 'POST') {
